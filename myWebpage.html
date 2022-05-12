@@ -1,0 +1,326 @@
+    <!DOCTYPE html>
+
+    <title>my webpage</title>
+
+    <html>
+
+    <head>
+
+    <style>
+
+        .foto{
+            width: 50px;
+            height: 50px;
+        }
+
+        .afbeelding{
+            width: 50px;
+            height: 50px;
+        }
+
+
+    </style>
+
+
+    <script>
+
+    //opdracht 1
+        function opdracht1() {
+                var eersteOpdracht = "";
+                eersteOpdracht = document.getElementById("text1").value;
+                if (eersteOpdracht == "hallo"){
+                    alert("Welkom")
+                } else if (eersteOpdracht == "doei"){
+                    alert ("Tot de volegende keer")
+                }
+        }
+
+            // opdracht 2    
+        function opdracht2(){
+            var tweedeOpdracht = "";
+            var letter = "e";
+            tweedeOpdracht = document.getElementById("text2").value;
+            if (tweedeOpdracht.includes(letter)){
+                alert (tweedeOpdracht);
+            }
+
+        }    
+
+        
+        //opdracht3
+        function opdracht3(){
+            var stringOpdracht3 = "";
+            stringOpdracht3 = document.getElementById("text3").value;
+            // var string2Opdracht3 = "";
+            // string2pdracht3 = document.getElementById("text4").value;
+            // var stringTotaal = "";
+            // stringTotaal = string2pdracht3 + stringOpdracht3;
+            var x = "";
+            x = document.getElementById("text4").value;
+            alert (stringOpdracht3.split(x).length-1);
+            // alert (stringTotaal.split(x).length-1);
+            
+
+        }
+
+        //opdracht4
+        function onclickA(){
+            let clickA = "U heeft of knop A geklikt <br/>";
+            document.getElementById("divOpdracht4").innerHTML = document.getElementById("divOpdracht4").innerHTML + clickA;
+        }
+
+        function onclickB(){
+            let clickB = "U heeft of knop B geklikt <br/>";
+            document.getElementById("divOpdracht4").innerHTML = document.getElementById("divOpdracht4").innerHTML + clickB;
+        }
+
+        function onclickC(){
+            let clickC = "U heeft of knop C geklikt <br/>";
+            document.getElementById("divOpdracht4").innerHTML = document.getElementById("divOpdracht4").innerHTML + clickC;
+        }
+
+        function onclickD(){
+            let clickD = "U heeft of knop D geklikt <br/>";
+            document.getElementById("divOpdracht4").innerHTML = document.getElementById("divOpdracht4").innerHTML + clickD;
+        }
+
+        //opdracht5
+        function onclick1(){
+            let een = 1;
+            let click1 = "U heeft of knop " + een + " geklikt <br/>";
+            if(document.getElementById("divOpdracht5").innerHTML.includes(een && een)){
+                alert("U heeft al een keer op 1 geklikt");
+            }
+            document.getElementById("divOpdracht5").innerHTML = document.getElementById("divOpdracht5").innerHTML + click1;
+            
+        }
+
+        function onclick2(){
+            let twee = 2;
+            let click2 = "U heeft of knop " + twee + " geklikt <br/>";
+            if(document.getElementById("divOpdracht5").innerHTML.includes(twee && twee)){
+                alert("U heeft al een keer op 2 geklikt");
+            }
+            document.getElementById("divOpdracht5").innerHTML = document.getElementById("divOpdracht5").innerHTML + click2;
+        }
+
+        function onclick3(){
+            let drie = 3;
+            let click3 = "U heeft of knop" + drie + " geklikt <br/>";
+            if(document.getElementById("divOpdracht5").innerHTML.includes(drie && drie)){
+                alert("U heeft al een keer op 3 geklikt");
+            }
+            document.getElementById("divOpdracht5").innerHTML = document.getElementById("divOpdracht5").innerHTML + click3;
+        }
+
+        function onclick4(){
+            let vier = 4;
+            let click4 = "U heeft of knop 4 geklikt <br/>";
+            if(document.getElementById("divOpdracht5").innerHTML.includes(vier && vier)){
+                alert("U heeft al een keer op 4 geklikt");
+            }
+            document.getElementById("divOpdracht5").innerHTML = document.getElementById("divOpdracht5").innerHTML + click4;
+        }
+
+        function onclick5(){
+            let vijf = 5;
+            let click5 = "U heeft of knop" + vijf + " geklikt <br/>";
+            // if(document.getElementById("divOpdracht5").innerHTML.includes(vijf && vijf)){
+            //     alert("U heeft al een keer op 5 geklikt");
+            // }
+            // document.getElementById("divOpdracht5").innerHTML = document.getElementById("divOpdracht5").innerHTML + click5;
+            let test = document.getElementById("divOpdracht5").innerHTML = document.getElementById("divOpdracht5").innerHTML + click5;
+            alert ("U heeft al "+ (test.split(vijf).length-1)+ " keer op vijf geklikt");
+                }
+
+                
+        // opdracht 6
+                var step = 0;
+                var jaar = 0;
+
+        function opdracht6(){
+            var images = [
+            "/home/robhoefnagel/Downloads/lente.jpg",
+            "/home/robhoefnagel/Downloads/zomer.jpg",
+            "/home/robhoefnagel/Downloads/herfst.jpg",           
+            "/home/robhoefnagel/Downloads/winter.jpg",
+            
+            ]
+            if (step==4){
+                step = 0;
+                jaar++;
+                alert("Er zijn "+ jaar + " jaar voorbij");
+            } 
+            if(jaar==3){
+                document.getElementById("13jaar").innerHTML = "Er zijn 3 jaren voorbij";
+            }
+            
+            document.getElementById("myImage").src = src=images[step];
+            step++;
+        }
+
+            
+            
+        //opdracht 8
+        var stap = 0;
+            function opdracht7(){
+            
+                var imagons = [
+            "/home/robhoefnagel/Downloads/lente.jpg",
+            "/home/robhoefnagel/Downloads/zomer.jpg",
+            "/home/robhoefnagel/Downloads/herfst.jpg",           
+            "/home/robhoefnagel/Downloads/winter.jpg",
+            
+            ]
+            if (stap==4){
+                stap = 0;
+            }             
+            document.getElementById("AFBA").src = src=imagons[stap];
+            stap++;
+        }
+
+        var stop = 0;
+        function opdracht71(){
+            
+                var imagons = [
+            "/home/robhoefnagel/Downloads/lente.jpg",
+            "/home/robhoefnagel/Downloads/zomer.jpg",
+            "/home/robhoefnagel/Downloads/herfst.jpg",           
+            "/home/robhoefnagel/Downloads/winter.jpg",
+            
+            ]
+            
+            if (stop==4){
+                stop = 0;
+            }             
+            document.getElementById("AFBB").src = src=imagons[stop];
+            stop++;
+        }
+
+        function opdracht72(){
+            if(document.getElementById("AFBA").src == document.getElementById("AFBB").src){
+                console.log("ze zijn hetzelfde");
+            } else {
+                console.log("ze zijn niet hetzelfde");
+            }
+
+        }
+
+        //opdracht8
+        var stip = 0;
+        function opdracht8(){
+            var imagens = [
+            "/home/robhoefnagel/Downloads/lente.jpg",
+            "/home/robhoefnagel/Downloads/zomer.jpg",
+            "/home/robhoefnagel/Downloads/herfst.jpg",           
+            "/home/robhoefnagel/Downloads/winter.jpg",
+            
+            ]
+            
+            if (stip==4){
+                stip = 0;
+            } 
+            if(document.getElementById("AFBA1").src == "/home/robhoefnagel/Downloads/lente.jpg") {
+                alert("hallo");
+            }            
+            document.getElementById("AFBA1").src = src=imagens[stip];
+          
+
+            
+            stip++;
+        }
+        
+        
+        </script>
+
+
+    </head>
+
+    <body>
+
+        
+        <input type="text" id="text1">
+
+        <button onclick= "opdracht1()">Opdracht 1</button>
+
+        <hr>
+
+        <input type="text" id="text2">
+
+        <button onclick="opdracht2()">Opdracht 2</button>
+
+        <hr>
+
+        <input type ="text" id="text3" placeholder="voer een text in">
+        
+        <input type="text" id="text4" placeholder="voer een letter in">
+
+        <button onclick="opdracht3()">opdracht3</button>
+
+        <hr>
+
+        <button id="button1" onclick="onclickA()">A</button>
+
+        <button id="button2" onclick="onclickB()">B</button>
+
+        <button id="button3" onclick="onclickC()">C</button>
+
+        <button id="button4" onclick="onclickD()">D</button>
+
+        <div id="divOpdracht4"></div>
+
+        <p id="paragraph"></p>
+
+        <hr>
+
+        <button id="buttonA" onclick="onclick1()">1</button>
+
+        <button id="buttonB" onclick="onclick2()">2</button>
+
+        <button id="buttonC" onclick="onclick3()">3</button>
+
+        <button id="buttonD" onclick="onclick4()">4</button>
+
+        <button id="buttonE" onclick="onclick5()">5</button>
+
+        <div id="divOpdracht5"></div>
+
+        <p id="paragraph"></p>
+
+        <hr>
+
+        <div id="foto1">
+
+            <img class="foto" id="myImage" src="/home/robhoefnagel/Downloads/winter.jpg">
+
+            <p id="13jaar"></p>
+
+            <button id="seizoen" onclick="opdracht6()">verander seizoen</button>
+
+        </div>
+
+        <hr>
+
+        <img class="afbeelding" id="AFBA" src="/home/robhoefnagel/Downloads/winter.jpg">
+
+        <img class ="afbeelding "id="AFBB" src="/home/robhoefnagel/Downloads/winter.jpg">
+
+        <p><button id="KNA" onclick="opdracht7()">KNA</button>
+
+        <button id="KNB" onclick="opdracht71()">KNB</button>
+
+        <button id="KNC" onclick="opdracht72()">KNC</button></p>
+
+        <hr>
+
+        <img class="afbeelding" id="AFBA1" onclick="opdracht8()" src="/home/robhoefnagel/Downloads/winter.jpg">
+
+        <img class ="afbeelding" id="AFBB1" src="">
+
+        
+        
+
+    </body>
+
+
+    </html>
